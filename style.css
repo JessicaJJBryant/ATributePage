@@ -81,7 +81,7 @@ h2 {
 ul {
     margin-left: 30px;
     margin-right: 20px;
-    font-size: clamp(.6rem, 1.7vw, 1.7rem);
+    font-size: clamp(.5rem, 1vw, 1rem);
 }
 .book-title {
     font-style: italic;
@@ -114,5 +114,9 @@ footer {
 @media (min-width: 768px) {
     #description {
         flex-direction: row;
+    }
+    ul {
+        margin-left: 90px;
+        margin-right: 60px;
     }
 }
