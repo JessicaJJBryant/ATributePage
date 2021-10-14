@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    position: relative;
+    color:rgb(226, 214, 226);
+}
+body::before {
+    content: "";
+    background-image: url(stars.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#title {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 5rem);
+    text-decoration: underline;
+}
+h2 {
+    text-align: center;
+    font-size: clamp(1.1rem, 3.5vw, 4.5rem);
+}
+.main-quote {
+    text-align: center;
+    font-size: clamp(.8rem, 2.5vw, 3rem);
+    color: rgb(243, 243, 185);
+}
+#new-suns {
+    color: yellow;
+    font-size: clamp(1.2rem, 3.2vw, 3.25rem);
+}
+#img-div {
+    width: 100%;
+    text-align: center;
+}
+#img-caption {
+    font-size: clamp(.5rem, .5vw, 1rem);
+    text-align: center;
+}
+#image {
+    display: block;
+    max-width: 100%;
+}
+#description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#description h3 {
+    padding: 5px;
+    border: 2px solid rgb(226, 214, 226);
+    font-size: clamp(.6rem, 1.7vw, 1.7rem);
+}
+#description #her-description {
+    color: rgb(243, 243, 185);
+    font-size: clamp(.7rem, 1.8vw, 1.8rem);
+}
+#timeline-title {
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgba(226, 214, 226, .7);
+    color:rgb(41, 7, 41);
+}
+ul {
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: clamp(.6rem, 1.7vw, 1.7rem);
+}
+.book-title {
+    font-style: italic;
+}
+#link {
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgba(226, 214, 226, .7);
+    color:rgb(41, 7, 41);
+}
+.end-quote {
+    padding: 5px;
+    text-align: center;
+    font-size: clamp(.8rem, 2.5vw, 3rem);
+    color: rgb(233, 233, 134);
+}
+.burn {
+    color: rgb(255, 145, 0);
+    font-size: clamp(1.2rem, 3.2vw, 3.25rem);
+}
+footer {
+    padding: 10px;
+    text-align: center;
+}
+.text-info {
+    color: rgb(226, 214, 226);
+}
+
+
+@media (min-width: 768px) {
+    #description {
+        flex-direction: row;
+    }
+}
